@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin-left: 40%;
+  margin-bottom: 40px;
+  width: 400px;
+  text-align: center;
+  color: aliceblue;
+  border: 2px solid rgb(252, 247, 252);
+  border-radius: 10px;
+}
+img {
+  max-width: 190px;
+  max-height: 170px;
+}
+main {
+  position: relative;
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  opacity: 0.6;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.background {
+  position: absolute;
+  background-image: url(https://wmpics.pics/di-BX32.jpg);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: blur(5px);
+  z-index: 0;
+}
+.container {
+  position: relative;
+  max-width: 1117px;
+  margin: 0 auto;
+  right: 6%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 10;
+}
+
+.carts {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 250px);
+}
+
+.cart {
+  border: 2px solid rgb(17, 16, 17);
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: rgba(250, 235, 215, 0.712);
+  text-align: center;
+}
+
+@media screen and (max-width: 1330px) {
+  h1 {
+    margin-left: 30%;
+  }
+  .container {
+    max-width: 1030px;
+    right: 0;
+  }
+  .carts {
+    grid-template-columns: repeat(4, 250px);
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  h1 {
+    margin-left: 20%;
+  }
+  .container {
+    max-width: 800px;
+    right: 0;
+  }
+  .carts {
+    grid-template-columns: repeat(3, 250px);
+  }
+}
+@media screen and (max-width: 803px) {
+  h1 {
+    margin-left: 15%;
+  }
+  .container {
+    max-width: 500px;
+    right: 0;
+  }
+  .carts {
+    grid-template-columns: repeat(2, 250px);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  h1 {
+    margin-left: 1%;
+    width: 230px;
+
+    font-size: 25px;
+  }
+  .container {
+    max-width: 260px;
+    right: 0;
+  }
+  .carts {
+    grid-template-columns: 250px;
+  }
+}
