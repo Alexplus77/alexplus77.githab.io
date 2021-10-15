@@ -1,1 +1,1 @@
-# [DEMO](https://alexplus77.github.io/coctailList/)
+# [DEMO](https://alexplus77.github.io/cocktailList/)
